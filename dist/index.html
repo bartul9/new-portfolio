@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="logo">
+        <img class="home__img" src="/dist/imgs/logo3.png" alt="" />
+      </div>
+      <div class="container">
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li><a href="#myWork">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <span class="navTrigger">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+      </div>
+    </nav>
+    <main class="home__main">
+      <section class="home">
+        <h1 class="home__name">
+          <span class="home__hello">HELLO I'M</span>
+          LUKA
+        </h1>
+        <h2 class="home__aspiring">AN ASPIRING WEB DEVELOPER</h2>
+        <span class="scroll__down">Scroll Down To See More</span>
+      </section>
+    </main>
+    <section class="about__me">
+      <h2 class="about__me-h2">Sailor, gamer, and Web Developer</h2>
+      <p>
+        <img src="/dist/imgs/thumbnail_IMG_20210201_221855_462.jpg" alt="" />
+        My name is Luka Bartulović. I am 28 years old programmer from Split,
+        Croatia. I love videogames, and I was a sailor, but.. I started to learn
+        programming in November 2020, and it changed my life. Finally, I have
+        something that I love and enjoy doing. Before this I don't have any
+        programming experience, and I finished Maritime High School which does
+        not have any advanced mathematics or anything really related to
+        programming. I started with HTML and CSS, and after I learned basics in
+        those "languages" I moved to JavaScript, and after I got good grasp with
+        JavaScript I moved to React, which is where I am right now. Also I am a
+        self-taught programmer, everything I learned is from stuff that I found
+        on the internet. Furthermore, I don't have too much experience yet, but
+        I have great will to work and learn new stuff. I have something that I
+        love, and I will put all my mind to be as good as I can. If you give me
+        opportunity to work for your company, I guarantee you it will pay off.
+        You can check some of my project's that I built until now. Thank you for
+        your time, and live long and prosper ✌️
+      </p>
+      <h2 class="skills">Skills</h2>
+      <div class="icons-exp">
+        <img src="/dist/imgs/html.png" alt="" />
+        <img src="/dist/imgs/css-3.png" alt="" />
+        <img src="/dist/imgs/js-icon.jpg" alt="" /><img
+          src="/dist/imgs/structure.png"
+          alt=""
+        /><img src="/dist/imgs/sass.png" alt="" />
+      </div>
+    </section>
+    <span id="myWork"></span>
+    <section class="my__work">
+      <h2>My Work</h2>
+      <p>A selection of my web design and development projects</p>
+      <div class="wrapper">
+        <div class="card">
+          <input type="checkbox" id="card1" class="more" aria-hidden="true" />
+          <div class="content">
+            <div
+              class="front"
+              style="background-image: url(/dist/imgs/magic-main.PNG)"
+            >
+              <div class="inner">
+                <h2>Magic the Gathering Cards APP</h2>
+
+                <label for="card1" class="button" aria-hidden="true">
+                  Details
+                </label>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <div class="description">
+                  <p>
+                    Magic the Gathering API consuming App made completly in
+                    html, css and javascript
+                  </p>
+                </div>
+
+                <label for="card1" class="button return" aria-hidden="true">
+                  <i class="fas fa-arrow-left"></i>
+                </label>
+                <a
+                  href="https://magic-the-gathering.vercel.app/#top"
+                  target="_blank"
+                  >More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <input type="checkbox" id="card2" class="more" aria-hidden="true" />
+          <div class="content">
+            <div
+              class="front"
+              style="background-image: url(/dist/imgs/covid-tracker.PNG)"
+            >
+              <div class="inner">
+                <h2>Corona Virus Tracker</h2>
+
+                <label for="card2" class="button" aria-hidden="true">
+                  Details
+                </label>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <div class="description">
+                  <p>
+                    Corona virus tracking APP, made in React. it tracks daily
+                    statistic for every country in the world.
+                  </p>
+                </div>
+
+                <label for="card2" class="button return" aria-hidden="true">
+                  <i class="fas fa-arrow-left"></i>
+                </label>
+                <a
+                  href="https://corona-tracker-app-react.netlify.app/"
+                  target="_blank"
+                  >More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <input type="checkbox" id="card3" class="more" aria-hidden="true" />
+          <div class="content">
+            <div
+              class="front"
+              style="background-image: url(/dist/imgs/mono-project.PNG)"
+            >
+              <div class="inner">
+                <h2>React/MobX vehicle editor APP</h2>
+
+                <label for="card3" class="button" aria-hidden="true">
+                  Details
+                </label>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <div class="description">
+                  <p>
+                    More complex react project using mobx state managment. It
+                    has all kind of difrent options like filtering, deleting,
+                    creating, editing cards..
+                  </p>
+                </div>
+
+                <label for="card3" class="button return" aria-hidden="true">
+                  <i class="fas fa-arrow-left"></i>
+                </label>
+                <a
+                  href="https://mono-front-end-project.netlify.app/"
+                  target="_blank"
+                  >More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <input type="checkbox" id="card4" class="more" aria-hidden="true" />
+          <div class="content">
+            <div
+              class="front"
+              style="background-image: url(/dist/imgs/purplej.PNG)"
+            >
+              <div class="inner">
+                <h2>Jaguar Club Landing Page</h2>
+
+                <label for="card4" class="button" aria-hidden="true">
+                  Details
+                </label>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <div class="description">
+                  <p>
+                    Purple Jaguar techno club landing page made in HTML and CSS
+                  </p>
+                </div>
+
+                <label for="card4" class="button return" aria-hidden="true">
+                  <i class="fas fa-arrow-left"></i>
+                </label>
+                <a href="https://new-project-blue.vercel.app/" target="_blank"
+                  >More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-me">
+        <form
+          onsubmit="resetInputs()"
+          action="https://formspree.io/f/xpzkadje"
+          method="POST"
+        >
+          <label>
+            E-mail
+            <input
+              required
+              class="email"
+              type="email"
+              name="email"
+              id="email"
+            />
+          </label>
+          <label
+            >Name
+            <input required class="name" type="text" name="name" />
+          </label>
+          <label
+            >Message
+            <textarea
+              class="message"
+              required
+              name="message"
+              id="message"
+            ></textarea>
+            <button class="submit" type="submit">Send</button>
+          </label>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social-icons">
+        <a class="icons" href="https://twitter.com/bartul_9" target="_blank">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a
+          class="icons"
+          href="https://www.facebook.com/bartul999"
+          target="_blank"
+        >
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a
+          class="icons"
+          href="https://www.instagram.com/bartul_9/"
+          target="_blank"
+        >
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a class="icons" href="https://github.com/bartul9" target="_blank">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+      </div>
+      <p>&copy Copyright 2021</p>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/ebaf8cd688.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/dist//js/main.js"></script>
+  </body>
+</html>
