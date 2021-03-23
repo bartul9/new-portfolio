@@ -232,7 +232,7 @@
       <h2>Contact Me</h2>
       <div class="contact-me">
         <form
-          onsubmit="resetInputs()"
+          class="my_form"
           action="https://formspree.io/f/xpzkadje"
           method="POST"
         >
@@ -258,6 +258,7 @@
               name="message"
               id="message"
             ></textarea>
+            <button onclick="reset()">Reset</button>
             <button class="submit" type="submit">Send</button>
           </label>
         </form>
