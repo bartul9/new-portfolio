@@ -96,7 +96,7 @@
   text-decoration: none;
   color: #162125;
   line-height: 65px;
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
 }
 
@@ -556,11 +556,16 @@
 
 .back .description {
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   border-radius: 5px;
   color: #162125;
   padding-right: 10px;
+}
+
+.back .description p {
+  margin: 0;
+  font-weight: 600;
 }
 
 .back .button {
@@ -699,10 +704,10 @@
 
 .about__me .skills {
   margin-top: 100px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   background: none;
-  color: #162125;
-  background-color: #f7f7f7;
+  color: #f7f7f7;
+  background-color: #000000bb;
 }
 
 .about__me .icons-exp {
@@ -776,7 +781,7 @@
   border-radius: 10px;
   width: 40%;
   height: 25vh;
-  height: 400px;
+  height: 420px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -825,9 +830,8 @@
   border-radius: 5px;
   border: none;
   font-size: 1.2rem;
-  color: #162125;
   font-weight: 500;
-  font-family: monospace;
+  font-family: Arial, Helvetica, sans-serif;
   background: #ececec;
 }
 
@@ -844,7 +848,7 @@
   width: 200px;
   height: 35px;
   margin: 15px 0px 0px 0px;
-  background-color: #227bb9;
+  background-color: #000000bb;
   border-radius: 10px;
   outline: none;
   border: none;
@@ -855,8 +859,13 @@
   transition: 200ms all ease;
 }
 
+.contact .contact-me form button:nth-last-child(1) {
+  background-color: #227bb9;
+}
+
 .contact .contact-me form button:hover {
-  background-color: #162125;
+  background-color: #f7f7f7;
+  color: #162125;
   cursor: pointer;
 }
 
