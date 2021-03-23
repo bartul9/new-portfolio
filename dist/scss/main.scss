@@ -1,0 +1,131 @@
+@import "config";
+@import "home";
+@import "nav";
+@import "my_work";
+@import "about";
+@import "contact";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 200vh;
+  overflow-x: hidden;
+  background-color: $primary-color;
+}
+
+.second-section {
+  height: 100vh;
+  width: 100vw;
+}
+
+#myWork {
+  position: relative;
+  top: -80px;
+}
+.home__main {
+  background-image: url(/dist/imgs/home-background-img.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  color: $primary-color;
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+
+  span {
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.89);
+    position: relative;
+    font-weight: 400;
+    top: -4px;
+  }
+}
+
+h2 {
+  display: inline;
+  color: $secondary-color;
+  background-color: $primary-color-light;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+.home__name {
+  position: relative;
+  transition: all 1500ms;
+  right: -200%;
+  top: 3px;
+}
+
+.home__hello {
+  font-size: 1.3rem;
+  color: $primary-color;
+  background-color: $secondary-color;
+  position: relative;
+  font-weight: 500;
+}
+
+.home__aspiring {
+  position: relative;
+  transition: all 1500ms;
+  left: -200%;
+  top: -10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-image: url(/dist/imgs/home-background-img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  font-size: 1rem;
+  bottom: 0.4rem;
+  right: 1rem;
+  text-align: right;
+  padding: 1rem;
+  color: $secondary-color;
+  position: fixed;
+  transition: all 500ms linear;
+  opacity: 0;
+
+  .social-icons {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    bottom: 1rem;
+    left: 1rem;
+
+    a {
+      color: $secondary-color;
+      padding: 0.4rem;
+      transition: 200ms;
+
+      &:hover {
+        color: $primary-color-light;
+      }
+    }
+  }
+}
