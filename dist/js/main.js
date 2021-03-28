@@ -8,6 +8,7 @@ const nav = document.querySelector(".nav");
 const home__img = document.querySelector(".home__img");
 const scroll__down = document.querySelector(".scroll__down");
 const fab_icons = document.querySelectorAll(".icons");
+const form = document.getElementById("my_form");
 
 const onLoad = () => {
   nav.style.opacity = 1;
@@ -37,23 +38,21 @@ document.addEventListener("scroll", function () {
       });
     });
     footer.style.color = "#f7f7f7";
-    footer.style.fontSize = "1rem";
   }
 });
 
 $(window).scroll(function () {
   if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
     footer.style.opacity = 1;
-    fab_icons.forEach((x) => (x.style.color = "#162215"));
-    footer.style.color = "#162215";
-    footer.style.fontSize = "1.2rem";
+    fab_icons.forEach((x) => (x.style.color = "#000000bb"));
+    footer.style.color = "#000000bb";
     fab_icons.forEach((x) => {
       x.addEventListener("mouseover", function () {
         x.style.color = "#f7f7f7";
       });
 
       x.addEventListener("mouseleave", function () {
-        x.style.color = "#162215";
+        x.style.color = "#000000bb";
       });
     });
   }
@@ -68,10 +67,6 @@ $(".navTrigger").click(function () {
   $("#mainListDiv").fadeIn();
 });
 
-function resetInputs() {
-  let email = $(".email").val();
-  let name = $(".name").val();
-  let message = $(".message").val();
-
-  email, name, (message = "");
-}
+const reset = () => {
+  form.reset();
+};
