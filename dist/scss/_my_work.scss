@@ -121,11 +121,16 @@ $accent-color: #355cc9;
 
   .description {
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     border-radius: 5px;
     color: $primary-color;
     padding-right: 10px;
+
+    p {
+      margin: 0;
+      font-weight: 600;
+    }
   }
 
   .button {
@@ -181,6 +186,16 @@ $accent-color: #355cc9;
       color: #fff;
       box-shadow: none;
     }
+  }
+}
+
+@media (max-width: 450px) {
+  .card {
+    width: 330px;
+    height: 370px;
+  }
+  .wrapper {
+    width: 100%;
   }
 }
 
