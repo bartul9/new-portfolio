@@ -18,6 +18,10 @@ $accent-color: #355cc9;
     font-size: 2rem;
     margin-bottom: 20px;
     text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      font-size: 1.4rem;
+    }
   }
 
   p {
@@ -27,6 +31,10 @@ $accent-color: #355cc9;
     margin-bottom: 20px;
     background-color: $secondary-color;
     color: $primary-color;
+
+    @media (max-width: 768px) {
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -49,6 +57,10 @@ $accent-color: #355cc9;
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
+  }
+
+  @media (max-width: 768px) {
+    height: 150px;
   }
 }
 
@@ -75,6 +87,10 @@ $accent-color: #355cc9;
     display: grid;
     padding: 1.5em;
     transform: translateZ(80px) scale(0.94);
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
   }
 }
 
@@ -111,6 +127,10 @@ $accent-color: #355cc9;
     color: #fff;
     font-weight: 500;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 768px) {
+      font-size: 1.4rem;
+    }
   }
 }
 

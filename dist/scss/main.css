@@ -431,6 +431,12 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+  .my__work h2 {
+    font-size: 1.4rem;
+  }
+}
+
 .my__work p {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -438,6 +444,12 @@
   margin-bottom: 20px;
   background-color: #f7f7f7;
   color: #162125;
+}
+
+@media (max-width: 768px) {
+  .my__work p {
+    font-size: 1.4rem;
+  }
 }
 
 .wrapper {
@@ -477,6 +489,12 @@
   transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1), -webkit-transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
 }
 
+@media (max-width: 768px) {
+  .card {
+    height: 150px;
+  }
+}
+
 .more {
   display: none;
 }
@@ -508,6 +526,13 @@
   padding: 1.5em;
   -webkit-transform: translateZ(80px) scale(0.94);
           transform: translateZ(80px) scale(0.94);
+}
+
+@media (max-width: 768px) {
+  .front,
+  .back {
+    font-size: 1rem;
+  }
 }
 
 .front {
@@ -545,6 +570,12 @@
   color: #fff;
   font-weight: 500;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .front h2 {
+    font-size: 1.4rem;
+  }
 }
 
 .back {
@@ -718,7 +749,7 @@
 @media (max-width: 768px) {
   .about__me p {
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     border-radius: 0px;
     padding: 10px;
   }
@@ -730,12 +761,24 @@
   margin-bottom: 15px;
 }
 
+@media (max-width: 768px) {
+  .about__me h2 {
+    font-size: 1.4rem;
+  }
+}
+
 .about__me .skills {
-  margin-top: 50px;
+  margin-top: 40px;
   font-size: 1.8rem;
   background: none;
   color: #162125;
   background-color: #f7f7f7;
+}
+
+@media (max-width: 768px) {
+  .about__me .skills {
+    font-size: 1.4rem;
+  }
 }
 
 .about__me .icons-exp {
@@ -757,6 +800,16 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.about__me .icons-exp .nodeIcon {
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  .about__me .icons-exp .nodeIcon {
+    width: 70px;
+  }
 }
 
 .about__me .icons-exp img {
@@ -824,6 +877,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 25px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .contact .contact-me form {
