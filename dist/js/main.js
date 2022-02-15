@@ -23,18 +23,18 @@ document.addEventListener("scroll", function () {
   if (pageYOffset > 50) {
     nav.classList.add("white");
     footer.style.opacity = 0;
-    scroll__down.style.top = "-100%";
+    scroll__down.style.opacity = 0;
   } else {
     nav.classList.remove("white");
     footer.style.opacity = 1;
-    scroll__down.style.top = "245px";
+    scroll__down.style.opacity = 1;
     fab_icons.forEach((x) => (x.style.color = "#f7f7f7"));
     fab_icons.forEach((x) => {
       x.addEventListener("mouseover", function () {
-        x.style.color = "#162215";
+        x.style.opacity = 0.8;
       });
       x.addEventListener("mouseleave", function () {
-        x.style.color = "#f7f7f7";
+        x.style.opacity = 1;
       });
     });
     footer.style.color = "#f7f7f7";
@@ -46,15 +46,6 @@ $(window).scroll(function () {
     footer.style.opacity = 1;
     fab_icons.forEach((x) => (x.style.color = "#000000bb"));
     footer.style.color = "#000000bb";
-    fab_icons.forEach((x) => {
-      x.addEventListener("mouseover", function () {
-        x.style.color = "#f7f7f7";
-      });
-
-      x.addEventListener("mouseleave", function () {
-        x.style.color = "#000000bb";
-      });
-    });
   }
 });
 

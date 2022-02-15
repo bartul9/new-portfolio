@@ -16,20 +16,26 @@
   justify-content: space-evenly;
   text-align: center;
   position: relative;
-  padding-top: 100px;
+  padding-top: 35px;
 
-  img {
-    border-radius: 50%;
+  .myImg {
+    border-radius: 10px;
     width: 200px;
     float: left;
     display: inline;
+    border: 1px solid rgba(255, 255, 255, 0.596);
+    margin: 0px 10px 0px 0px;
+
+    @media (max-width: 768px) {
+      margin: 5px;
+    }
   }
 
   p {
     margin-top: 20px;
     padding: 25px;
     width: 70%;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     background: rgba(21, 113, 250, 0.466);
     background: linear-gradient(
       123deg,
@@ -40,6 +46,14 @@
     position: relative;
     border-radius: 25px;
     font-family: monospace;
+    text-align: left;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      font-size: 1.1rem;
+      border-radius: 0px;
+      padding: 10px;
+    }
   }
 
   h2 {
@@ -49,7 +63,7 @@
   }
 
   .skills {
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 1.8rem;
     background: none;
     color: $primary-color;
@@ -63,7 +77,7 @@
     justify-content: space-evenly;
     width: 100%;
     margin-top: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 
     height: fit-content;
 
@@ -75,12 +89,10 @@
         transform: scale(1.2);
         rotate: (360deg);
       }
-    }
-  }
 
-  @media (max-width: 720px) {
-    p {
-      width: 100%;
+      @media (max-width: 768px) {
+        width: 50px;
+      }
     }
   }
 }

@@ -10,7 +10,6 @@
     rgba(171, 191, 221, 1) 100%
   );
   text-align: center;
-
   h2 {
     font-size: 2rem;
     margin-bottom: 10px;
@@ -80,8 +79,8 @@
         transition: 200ms all ease;
 
         &:hover {
-          background-color: $primary-color;
-          cursor: pointer;
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+          text-shadow: none;
         }
       }
     }
