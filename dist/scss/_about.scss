@@ -42,11 +42,17 @@
       rgb(21, 113, 250) 0%,
       rgb(44, 92, 164) 100%
     );
-    color: $secondary-color;
+    color: $secondary-color; 
     position: relative;
     border-radius: 25px;
     font-family: monospace;
     text-align: left;
+    display: flex; 
+    align-items: center;
+
+    @media (max-width: 1250px) {
+        display: block
+    }
 
     @media (max-width: 768px) {
       width: 95%;
@@ -56,7 +62,7 @@
       text-align: left;
     }
   }
-
+ 
   h2 {
     text-transform: uppercase;
     font-size: 2rem;

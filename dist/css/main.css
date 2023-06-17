@@ -706,8 +706,6 @@
   position: relative;
   border-radius: 25px;
   font-family: monospace;
-  display: flex;
-  align-items: center;
 }
 
 .about__me h2 {
@@ -755,12 +753,6 @@
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   rotate: 360deg;
-}
-
-@media (max-width: 1250px) {
-  .about__me p {
-    display: block
-  }
 }
 
 @media (max-width: 720px) {
