@@ -1,11 +1,6 @@
 .about__me {
   height: fit-content;
-  background: rgb(33, 120, 246);
-  background: linear-gradient(
-    180deg,
-    rgba(33, 120, 246, 1) 0%,
-    rgba(171, 191, 221, 1) 100%
-  );
+  background-color: #fff;
   background-size: cover;
   background-position: top;
   border-top: 2px solid $secondary-color;
@@ -16,7 +11,9 @@
   justify-content: space-evenly;
   text-align: center;
   position: relative;
-  padding-top: 35px;
+  padding-top: 125px;  
+  border-left: 5px dashed rgba(0, 0, 0, 0.7333333333);
+  border-right: 5px dashed rgba(0, 0, 0, 0.7333333333);
 
   .myImg {
     border-radius: 10px;
@@ -36,15 +33,10 @@
     padding: 25px;
     width: 70%;
     font-size: 1.3rem;
-    background: rgba(21, 113, 250, 0.466);
-    background: linear-gradient(
-      123deg,
-      rgb(21, 113, 250) 0%,
-      rgb(44, 92, 164) 100%
-    );
+    background-color: rgba(0, 0, 0, 0.7333333333);
     color: $secondary-color; 
     position: relative;
-    border-radius: 25px;
+    border-radius: 5px;
     font-family: monospace;
     text-align: left;
     display: flex; 
@@ -107,6 +99,8 @@
     img {
       width: 65px;
       transition: 500ms all ease;
+      border-radius: 5px;
+
 
       &:hover {
         transform: scale(1.2);

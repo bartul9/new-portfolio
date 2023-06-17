@@ -3,13 +3,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgb(33, 120, 246);
-  background: linear-gradient(
-    180deg,
-    rgba(33, 120, 246, 1) 0%,
-    rgba(171, 191, 221, 1) 100%
-  );
+  background-color: #fff;
   text-align: center;
+  border-left: 5px dashed rgba(0, 0, 0, 0.7333333333);
+  border-right: 5px dashed rgba(0, 0, 0, 0.7333333333);
+  border-bottom: 5px dashed rgba(0, 0, 0, 0.7333333333);
+
   h2 {
     font-size: 2rem;
     margin-bottom: 10px;
@@ -17,8 +16,8 @@
   }
 
   .contact-me {
-    background-color: rgba(0, 0, 0, 0.288);
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7333333333);
+    border-radius: 5px;
     width: 40%;
     height: 25vh;
     height: 400px;
@@ -26,7 +25,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 25px;
+    margin-bottom: 55px;
     height: fit-content;
 
     form {
@@ -69,14 +68,14 @@
       button {
         width: 200px;
         height: 35px;
-        margin: 15px 0px 0px 0px;
-        background-color: $third-color;
+        margin: 15px 0px 12px 0px;
+        background-color: #f7f7f7;
         border-radius: 10px;
         outline: none;
         border: none;
         font-size: 1.3rem;
         text-transform: uppercase;
-        color: $secondary-color;
+        color: rgba(0, 0, 0, 0.7333333333);
         transition: 200ms all ease;
 
         &:hover {

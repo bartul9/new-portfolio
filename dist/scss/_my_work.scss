@@ -1,18 +1,14 @@
 $accent-color: #355cc9;
 
 .my__work {
-  background: rgb(33, 120, 246);
-  background: linear-gradient(
-    0deg,
-    rgba(33, 120, 246, 1) 0%,
-    rgba(171, 191, 221, 1) 100%
-  );
-
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  border-left: 5px dashed rgba(0, 0, 0, 0.7333333333);
+  border-right: 5px dashed rgba(0, 0, 0, 0.7333333333);
 
   h2 {
     font-size: 2rem;
